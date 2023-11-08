@@ -42,7 +42,7 @@ class ArrayQueue(Array):
 
 	def front(self):
 		# The front() operation returns a reference value to the front element of the queue, but doesn’t remove it
-		if self.isEmpty:
+		if self.isEmpty():
 			return Element(None,None)
 		else:
 			return self.contents[0]
